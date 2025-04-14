@@ -1,0 +1,10 @@
+.color-1  { background-color: #a6785f; }  /* tom mais escuro e aconchegante da paleta */
+.color-2  { background-color: #bf9780; }
+.color-3  { background-color: #bfa89b; }
+.color-4  { background-color: #cfb1a0; }
+.color-5  { background-color: #d9b8a5; }
+.color-6  { background-color: #dfcbc0; }
+.color-7 { background-color: #e6d5cc; }
+.color-8  { background-color: #efe5df; }
+.color-9  { background-color: #f2e6e0; }
+.color-10  { background-color: #ffffff; }  /* branco puro */
