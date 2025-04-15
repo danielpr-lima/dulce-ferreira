@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"><!--font-family: 'Parisienne', cursive; -->
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"><!--font-family: 'Caveat', cursive; -->
-    <link rel="stylesheet" href="reset.css">    
-    <link rel="stylesheet" href="style.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!--font-family: 'Parisienne', cursive; -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!--font-family: 'Caveat', cursive; -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styleHeader.css">
+    <link rel="stylesheet" href="/css/carrossel.css">
+    <link rel="stylesheet" href="/css/styleHome.css">
+    <script src="/js/caroussel.js"></script> <!-- Isso bloqueia o carregamento do HTML -->
+
+
+
     <title>Home</title>
 </head>
+
 <body>
     <Header>
         <h1 class="logoTipo"><a href="Home.html">Dulce Ferreira</a></h1>
         <nav class="menu">
             <ul class="menuHorizontal">
-                <li><a href="produtos.html">Produtos</a></li>
+                <li class="menu-item"><a href="produtos.html">Produtos</a></li>
                 <li class="divisoria">|</li>
-                <li><a href="contato.html">Contato</a></li>
+                <li class="menu-item"><a href="contato.html">Contato</a></li>
                 <li class="divisoria">|</li>
-                <li><a href="localizaáo.html">Localização</a></li>
+                <li class="menu-item"><a href="localizaáo.html">Localização</a></li>
                 <li class="divisoria">|</li>
-                <li><a href="dulce.html">A Dulce</a></li>
+                <li class="menu-item"><a href="dulce.html">A Dulce</a></li>
             </ul>
         </nav>
-   
+    </Header>
+    
+        <div class="carrossel">
+            <div class="slides">
+                <div class="slide"><a href="/Img/BoloElegante.png"><img src="/Img/BoloElegante.png" alt="Imagem 1"></a></div>
+                <div class="slide"><a href="/Img/Doces-finos-1920x1080 (2).jpg"><img src="/Img/Doces-finos-1920x1080 (2).jpg" alt="Imagem 2"></a></div>
+                <div class="slide"><a href="/Img/Sobremesas-16x9.jpg"><img src="/Img/Sobremesas-16x9.jpg" alt="Imagem 3"></a></div>
+            </div>
+
+            <button class="prev" onclick="mudarSlide(-1)">❮</button>
+            <button class="next" onclick="mudarSlide(1)">❯</button>
+        </div>
+        <div class="MarcaDAgua">
+            <h1>Dulce</h1>
+            <h1>Ferreira</h1>
+            <h1>Dulce</h1>
+            <h1>Ferreira</h1>
+            <h1>Dulce</h1>
+            <h1>Ferreira</h1>
+            <h1>Dulce</h1>
+            <h1>Ferreira</h1>
+            <h1>Dulce</h1>
+            <h1>Ferreira</h1>
+            <h1>Dulce</h1>
+            <h1>Ferreira</h1>
+            <h1>Dulce</h1>
+            <h1>Ferreira</h1>
+            <h1>Dulce</h1>
+            <h1>Ferreira</h1>
+            
+        </div>
+
 </body>
+
 </html>
