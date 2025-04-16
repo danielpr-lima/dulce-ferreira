@@ -67,14 +67,15 @@ body {
                 width: 85%;
                 height: 60%;
                 border-radius: 10%;
-
+                object-fit: cover;
 
             }
 
             h1 {
                 color: #673500;
-                margin-bottom: 2rem;
-
+                margin-bottom: 1rem;
+                font-family: 'Georgia', serif;
+                font-size: 1.8rem;
             }
         }
     }
@@ -88,88 +89,126 @@ footer {
     align-items: center;
     justify-content: center;
 
-    & .footer-content{
+    h1 {
+        color: #673500;
+        font-family: 'Georgia', serif;
+        font-size: 1.8rem;
+    }
+
+    & .footer-content {
         width: 60%;
         height: 75%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        & .esquerdo{
+        .esquerdo {
+
             width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            & .enderoco{
-                display: flex;
-                align-items: center;
-                
-                
+            h1 {
+                margin-bottom: 2rem;
+
             }
+
+            p {
+                color: #673500;
+                font-size: 1rem;
+                font-family: 'Georgia', serif;
+            }
+
+            & .endereco {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                justify-content: center;
+
+                iframe {
+                    border: none;
+                    width: 90%;
+                    /* height: ; */
+                }
+            }
+
         }
-        & .divisoria{
+
+
+
+        & .divisoria {
             width: 0.5%;
             height: 100%;
             background-color: #673500;
         }
-        & .direito{
+
+        & .direita {
             width: 50%;
-           
+            display: flex;
+            flex-direction: column;
+            align-items: left; /*isso centraliza o h1 e o bloco abaixo horizontalmente*/            
+            margin-left: 2rem;
+
+            h1 {
+                
+                text-align: center;
+                /*/ garante que o texto do h1 fique centralizado*/
+                width: 100%;
+                /*/* necessário se quiser alinhar texto de forma central mesmo em flex*/
+            }
+
+            & .redes {
+                font-family: 'Georgia', serif;
+                font-size: 2rem;
+                display: grid;
+                align-items: center;
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(3, auto);
+                justify-content: center;
+                margin: 2rem;
+                /*/ alinha o grid à esquerda*/
+                gap: 1rem 2rem; /* espaço entre linhas e colunas (opcional)*/
+
+                & .img-icon {
+                    width: 4vh;
+                }
+
+                & .instagram {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                }
+
+                & .facebook {
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                }
+
+                & .whatsapp {
+                    grid-column: 1 / 2;
+                    grid-row: 3 / 4;
+                }
+                p:nth-of-type(1) {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    text-align: left;
+                }
+        
+                p:nth-of-type(2) {
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                    text-align: left;
+                }
+        
+                p:nth-of-type(3) {
+                    grid-column: 2 / 3;
+                    grid-row: 3 / 4;
+                    text-align: left;
+                }
+            }
         }
+
     }
 
 }
-/* 
-.footer {
-    height: 10vh;
-    width: 100vw;
-    margin-top: auto;
-    background-color: #e4ffaf;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0.4vw 0.4vw 0 0;
-    border: #000000 0.05vw solid;
-}
-
-.contato {
-    margin-left: 10%;
-    font-family: 'Cuprum';
-    font-size: 1.5vh;
-}
-
-.contato li {
-    margin-bottom: 0.2vw;
-}
-
-.redes {
-    margin-right: 10%;
-    font-family: 'Cuprum';
-    font-size: 1.5vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
-}
-
-.img-icon {
-    height: 2vh;
-    padding: 0.09vw;
-}
-
-.instagram {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.facebook {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.whatsapp {
-    grid-column: 1/2;
-    grid-row: 3/4;
-} */
