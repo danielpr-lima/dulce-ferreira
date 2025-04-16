@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffaf6;  
+}
+
+/* Seção central com fundo */
+.conteudo-principal {
+  background-color: #e6ccbb;
+  margin: auto;
+  padding: 30px;
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+
+/* Título Produtos */
+.titulo-produtos {
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #5a2e17;
+}
+
+/* Cards de categorias */
+.categorias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  .categoria {
+    background-color: #fff7ef;
+    padding: 15px;
+    border-radius: 10%;
+    width:25%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+    
+
+    img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10%;
+    }
+
+    button {
+      
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: bold;
+      background: #fff;
+      border-radius: 8px;
+      padding: 5px;
+    }
+  }
+}
+
+.MarcaDAgua {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4%;
+  background-color: #EFE5DF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px -1vh 2vh #0000003f;
+
+
+  h1 {
+    color: #6735004b;
+    margin: 0.8rem;
+    font-family: 'Parisienne', cursive;
+    rotate: -10deg;
+  }
+}
