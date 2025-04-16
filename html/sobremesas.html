@@ -26,6 +26,9 @@
                 <li class="menu-item"><a href="/html/dulce.html">A Dulce</a></li>
             </ul>
         </nav>
+        <div class="icone-carrinho" id="icone-carrinho">
+            🛒<span class="contador" id="contador-carrinho">0</span>
+        </div>
     </Header>
 
     <section class="titulo">
@@ -40,14 +43,14 @@
             <h3>Mil Folhas Frutas</h3>
             <p>Crocantes camadas de massa folhada com suave creme de baunilha e frutas silvestres frescas. Clássico
                 irresistível.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Mil Folhas Frutas">Quero esse</button>
         </div>
         <div class="card">
             <img src="/Img/sobremesas/img_Panna_Cotta_Lavanda.jpg" alt="">
             <h3>Panna Cotta Lavanda</h3>
             <p>Cremosa sobremesa italiana com o perfume relaxante da lavanda, calda de mel e amêndoas laminadas.
                 Delicadeza floral e sabor único.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Panna Cotta Lavanda">Quero esse</button>
         </div>
 
         <div class="card">
@@ -55,7 +58,7 @@
             <h3>Parfait Café</h3>
             <p>Camadas geladas de intenso sabor de café e ganache de chocolate amargo. Energia e prazer em cada textura.
             </p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Parfait Café">Quero esse</button>
         </div>
 
         <div class="card">
@@ -63,7 +66,7 @@
             <h3>Profiteroles Pistache</h3>
             <p>Delicados bolinhos recheados com creme de pistache, banhados em calda quente de chocolate branco.
                 Sofisticação em cada mordida.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Profiteroles Pistache">Quero esse</button>
         </div>
 
         <div class="card">
@@ -71,7 +74,7 @@
             <h3>Sorbete Cítrico</h3>
             <p>Puro frescor do limão siciliano com notas de hortelã, finalizado com crocante de gengibre. Revigorante e
                 elegante.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Sorbete Cítrico">Quero esse</button>
         </div>
 
         <div class="card">
@@ -79,10 +82,19 @@
             <h3>Verrine Tropical</h3>
             <p>Camadas de mousse leve de maracujá e gelée suave de manga, com toque de coco fresco. Sabor exótico em
                 cada colher.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Verrine Tropical">Quero esse</button>
         </div>
 
     </section>
+    
+    <div id="menu-lateral" class="menu-lateral">
+        <div class="menu-content">
+            <button id="fechar-menu" class="fechar-menu">X</button>
+            <h3>Adicione ao Carrinho</h3>
+            <ul id="itens-carrinho"></ul>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </div>
+    </div>
 
     <div class="MarcaDAgua">
         <h1>Dulce</h1>
@@ -105,5 +117,5 @@
     </div>
 
 </body>
-
+<script src="/js/carrinho.js"></script>
 </html>

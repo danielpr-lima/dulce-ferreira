@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/styleHeader.css" />
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -26,6 +27,10 @@
                 <li class="menu-item"><a href="/html/dulce.html">A Dulce</a></li>
             </ul>
         </nav>
+        <div class="icone-carrinho" id="icone-carrinho">
+            🛒<span class="contador" id="contador-carrinho">0</span>
+        </div>
+        
     </Header>
 
     <section class="titulo">
@@ -38,47 +43,56 @@
             <img src="/Img/Bolos/img_ChocolateBelga.jpg" alt="">
             <h3>Chocolate Belga</h3>
             <p>Bolo pequeno com chocolate nobre e sabor intenso. Ideal para quem aprecia sofisticação e intensidade.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Chocolate Belga"> Quero esse</button>
         </div>
-        
+
         <div class="card">
             <img src="/Img/Bolos/img_RedVelvetCream.jpg" alt="">
             <h3>Red Velvet Cream</h3>
             <p>Mini bolo com massa aveludada e recheio cremoso. Visual marcante e sabor equilibrado.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Red Velvet Cream">Quero esse</button>
         </div>
-        
+
         <div class="card">
             <img src="/Img/Bolos/img_PistacheFranboesa.jpg" alt="">
             <h3>Pistache Framboesa</h3>
             <p>Bolo médio com massa suave e sabores contrastantes. Colorido, delicado e cheio de charme.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Pistache Framboesa">Quero esse</button>
         </div>
-        
+
         <div class="card">
             <img src="/Img/Bolos/img_LimaoPoppy.jpg" alt="">
             <h3>Limão Poppy</h3>
             <p>Bolo cítrico com toque crocante das sementes de papoula. Leve, fresco e surpreendente.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Limão Poppy">Quero esse</button>
         </div>
-        
+
         <div class="card">
             <img src="/Img/Bolos/img_NozesDoceLeite.jpg" alt="">
             <h3>Nozes Doce de Leite</h3>
             <p>Bolo especial com camadas de nozes e doce de leite. Rico, aconchegante e tradicional.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Nozes Doce de Leite">Quero esse</button>
         </div>
-        
+
         <div class="card">
             <img src="/Img/Bolos/img_BaunilhaBranco.jpg" alt="">
             <h3>Baunilha Branco</h3>
             <p>Grande e elegante, com massa leve e recheio suave. Perfeito para comemorações refinadas.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Baunilha Branco">Quero esse</button>
         </div>
-        
+
         </div>
 
     </section>
+
+    <div id="menu-lateral" class="menu-lateral">
+        <div class="menu-content">
+            <button id="fechar-menu" class="fechar-menu">X</button>
+            <h3>Adicione ao Carrinho</h3>
+            <ul id="itens-carrinho"></ul>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </div>
+    </div>
 
     <div class="MarcaDAgua">
         <h1>Dulce</h1>
@@ -99,7 +113,7 @@
         <h1>Ferreira</h1>
         <h1>Dulce</h1>
     </div>
-    
-</body>
 
+</body>
+<script src="/js/carrinho.js"></script>
 </html>

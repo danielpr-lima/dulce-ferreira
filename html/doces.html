@@ -26,6 +26,9 @@
                 <li class="menu-item"><a href="/html/dulce.html">A Dulce</a></li>
             </ul>
         </nav>
+        <div class="icone-carrinho" id="icone-carrinho">
+            🛒<span class="contador" id="contador-carrinho">0</span>
+        </div>
     </Header>
 
     <section class="titulo">
@@ -38,45 +41,54 @@
             <img src="/Img/doces/img_BombomBelga.jpg" alt="">
             <h3>Bombom Belga</h3>
             <p>Chocolate nobre com recheio cremoso de caramelo salgado. Sabor intenso e sofisticado.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Bombom Belga">Quero esse</button>
         </div>
 
         <div class="card">
             <img src="/Img/doces/img_MacaronFrances.jpg" alt="">
             <h3>Macaron Francês</h3>
             <p>Biscoito delicado de amêndoa em sabor de lavanda. Elegância em cada mordida.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Macaron Francês">Quero esse</button>
         </div>
 
         <div class="card">
             <img src="/Img/doces/img_MiniCheeseFrutas.jpg" alt="">
             <h3>Mini Cheese Frutas</h3>
             <p>Pequeno cheesecake com cobertura de frutas vermelhas frescas. Leveza e frescor.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Mini Cheese Frutas">Quero esse</button>
         </div>
 
         <div class="card">
             <img src="/Img/doces/img_TrufaNobreCacau.jpg" alt="">
             <h3>Trufa Nobre Cacau</h3>
             <p>Trufa de chocolate gourmet envolta em puro cacau. Intensidade e prazer.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Trufa Nobre Cacau">Quero esse</button>
         </div>
 
         <div class="card">
             <img src="/Img/doces/img_BrownieCremoso.jpg" alt="">
             <h3>Brownie Cremoso</h3>
             <p>Mini brownie macio com nozes e calda de caramelo. Textura rica e sabor marcante.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Brownie Cremoso">Quero esse</button>
         </div>
 
         <div class="card">
             <img src="/Img/doces/img_CamafeuElegante.jpg" alt="">
             <h3>Camafeu Elegante</h3>
             <p>Doce clássico de nozes com cobertura de fondant delicado. Sofisticação tradicional.</p>
-            <button>Quero esse</button>
+            <button class="btn-add" data-name="Camafeu Elegante">Quero esse</button>
         </div>
 
     </section>
+
+    <div id="menu-lateral" class="menu-lateral">
+        <div class="menu-content">
+            <button id="fechar-menu" class="fechar-menu">X</button>
+            <h3>Adicione ao Carrinho</h3>
+            <ul id="itens-carrinho"></ul>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </div>
+    </div>
 
     <div class="MarcaDAgua">
         <h1>Dulce</h1>
@@ -99,5 +111,6 @@
     </div>
 
 </body>
+<script src="/js/carrinho.js"></script>
 
 </html>
