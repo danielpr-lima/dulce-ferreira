@@ -16,10 +16,10 @@ body {
   text-align: justify;
   
   h2 {
+    font-family: 'Parisienne', cursive;
     text-align: center;
     color: #7c4b2b;
-    font-size: 2rem;
-    font-style: italic;
+    font-size: 3rem;
     margin-bottom: 20px;
   }
   p {

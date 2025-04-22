@@ -19,7 +19,7 @@ main{
 
     & .slides {
         display: flex;
-        transition: transform 1s ease-in-out;
+        transition: transform 2s ease-in-out;
         width: 100%;/* 2 imagens: ajuste conforme o número de slides */
         height: 35rem;/* Altura fixa para o carrossel */
 
